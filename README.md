@@ -29,7 +29,7 @@ pip install -r requirements.txt
 mkdir heroku-flask-demo
 cd heroku-flask-demo
 git init
-heroku apps:create flask-demo-mstar
+heroku apps:create flask-demo-mstar --buildpack heroku/python
 heroku addons:add heroku-postgresql:hobby-dev
 
 - Create config.py
